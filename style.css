@@ -1,0 +1,180 @@
+*{
+    font-family: sans-serif;
+}
+.box{
+    width: 80%;
+
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.top{
+    display: flex;
+    gap: 705px;
+}
+.menu{
+    display: flex;
+    flex-direction: row;
+
+    gap: 30px;
+}
+.name{
+    font-size: 50px;
+}
+.big{
+    width: 890px;
+}
+.txt_left{
+    display: grid;
+    grid-template-columns: 40% 50%;
+}
+.w30{
+    font-size: 59px;
+    
+}
+.stxt{
+    display: flex;
+    flex-direction: column;
+    width: 390px;
+    gap: 70px;
+    height: 100px;
+    padding: 20px;
+}
+p1{
+    flex-wrap: wrap;
+    letter-spacing: 1.5px;
+}
+button{
+    width: 200px;
+    padding: 5px;
+    border-radius: 2px;
+    border: none;
+    background-color: rgb(239, 92, 92);
+}
+.body{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.right{
+    padding: 20px;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    height: 520px;
+}
+.first p{
+    color: rgb(121, 125, 143);
+}
+.new{
+    color: yellow;
+    font-size: 30px;
+}
+.columns img{
+    width: 100px;
+
+}
+.columns{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    width: 410px;
+}
+.txt_foot p{
+    flex-wrap: wrap;
+    color: darkgrey;
+    font-size: 20px;
+
+}
+.txt_foot h2{
+    font-size: 20px;
+}
+.txt_foot span{
+    font-size: 40px;
+    color: orange;
+}
+.footer{
+    display: flex;
+}
+.mobmenu{
+    display: none;
+}
+.small{display: none;}
+@media screen and (max-width:750px){
+    body{
+        margin-left: -40px;
+        
+        box-sizing: border-box;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        
+    }
+    .box{
+        padding: 50px;
+    }
+    .big{
+        display: none;
+    }
+    .small{
+        display: block;
+        width: 750px;
+    }
+    .menu{
+        display: none;
+    }
+
+    .top .mobmenu{
+        display: block;
+        width: 100px;
+        margin-left: -110px;
+        height: 50px;
+    }
+    .top{
+        display: flex;
+        flex-direction: row;
+    }
+    .body{
+        width: 430px;
+        display: flex;
+        gap: 150px;
+        flex-direction: column;
+    }
+    .txt_left{
+        display: flex;
+        flex-direction: column;
+    }
+    .stxt p1{
+        width: 700px;
+        font-size: 30px;
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+    }
+    .stxt button{
+        width: 300px;
+        height: 100px;
+        padding: 20px;
+
+        font-size: 30px;
+        margin-top: -30px;
+    }
+    .right{
+        width: 710px;
+        font-size: 50px;
+        height: 1500px;
+    }
+    .footer{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        margin-top: 50px;
+    }
+}
